@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>移动端HTML5+JQ实现控制音频进度条播放音频</title>
+    <script src="../js/auto-size.js"></script>
+    <link rel="stylesheet" href="../css/audio.css">
+</head>
+
+<body>
+    <!-- 语音进度栏 -->
+    <div class="audio-wrapper voice">
+        <audio controls preload="auto" class="school-audio" src="http://file.duzhai.net/Files/Audio/2017-08/af01ab05-d112-4ad7-9cff-2cfecced5bc6.mp3" type="audio/mp3" hidden="true"></audio>
+        <div class="audio-right">
+            <div class="right-top">
+                <span>音频测试</span>
+                <img id="tack-back-img" src="../images/shouqi.png" alt="">
+            </div>
+            <div class="right-bottom">
+                <img id="audioPlayer" src="../images/play.png">
+                <div class="progress-bar-bg" id="progressBarBg">
+                    <span id="progressDot"></span>
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+            </div>
+            <div class="audio-time">
+                <span class="audio-length-current" id="audioCurTime">00:00</span> /
+                <span class="audio-length-total">00:00</span>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/audio.js"></script>
+</body>
+
+</html>
